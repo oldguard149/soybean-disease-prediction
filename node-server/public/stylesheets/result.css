@@ -1,0 +1,76 @@
+:root {
+    font-size: 18px;
+    --font-color: #464141;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+  }
+
+
+#wrap {
+    display: flex;
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#main {
+    margin: 5rem auto;
+}
+
+#info {
+    padding: 2rem;
+}
+
+#info li {
+    padding: 0.25rem;
+}
+
+#info ul {
+    padding-left: 1rem;
+}
+
+#countdown-time {
+  text-align: center;
+}
+
+#main form {
+  margin: 1rem 0 2rem 0;
+}
+
+#download-button {
+  padding: 1rem;
+  display: flex;
+  margin: auto;
+  border-radius: 0.3rem;
+}
+
+
+.btnEnable {
+  background-color:#E6F9D2;
+  border:1px solid #97DE4C;
+  color:#232323;
+  cursor: pointer;
+}
+
+.btnDisable {
+  background-color:#FCBABA;
+  border:1px solid #DD3939;
+  color:#232323;
+  cursor: wait;
+}
+
+h2 {
+  padding: 1rem;
+}

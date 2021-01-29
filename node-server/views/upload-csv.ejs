@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/csv-upload.css" />
+    <link rel="stylesheet" href="/stylesheets/topnav.css">
+
+    <style>
+        .btnDisable,
+        #form-container .btnDisable:hover {
+            cursor: not-allowed !important;
+            background-color: #D6D6D6 !important;
+            border: 1px solid #DAD3D3 !important;
+            color: #bfbfbf !important
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <%- include('topnav') %>
+        <div id="form-csv">
+            <h2>Upload your csv file and get predict</h2>
+            <% if ('undefined' !== typeof filesizeError && filesizeError) {%>
+            <div class="alert">
+                <p id="error-filesize">File too large, only csv file with size smaller than 2MB is available.</p>
+            </div>
+            <% } %>
+            <div id="form-container">
+                <form method="post" enctype="multipart/form-data" onsubmit="disableButton()">
+                    <div style="margin: auto;">
+                        <label for="">Csv File:</label>
+                        <input type="file" name="csv" required>
+                    </div>
+                    <input id="submit-btn" class="submit-button" type="submit" value="Upload">
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function disableButton() {
+            var button = document.getElementById('submit-btn');
+            button.classList.add('btnDisable');
+            button.setAttribute("disabled", "disabled");
+        }
+    </script>
+</body>
+
+</html>

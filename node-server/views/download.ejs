@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Download page</title>
+    <link rel='stylesheet' href='/stylesheets/result.css' />
+    <link rel="stylesheet" href="/stylesheets/topnav.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <%- include('topnav') %>
+        <div id="main">
+            <h2 id="message">Your file is processing, please wait for a moment</h2>
+            <h2 id="countdown-time"><%= waitTime %></h2>
+            <form action="<%=link%>" method="get">
+                <button id="download-button" class="btnDisable" disabled type="submit">
+                    Download
+                </button>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        var $countdownElement = document.getElementById('countdown-time');
+        var second = parseInt($countdownElement.textContent);
+        window.onload = initialize;
+
+        function initialize() {
+            document.getElementById('download-button').setAttribute('disabled', 'disabled');
+        }
+
+        (function countDown() {
+            second--;
+            $countdownElement.textContent = second;
+            if (second > 0) setTimeout(countDown, 1000);
+            if (second <= 0) {
+                var downloadBtn = document.getElementById('download-button');
+                var message = document.getElementById('message');
+                message.innerHTML= 'Your file is ready, please click the button below to download!';
+                downloadBtn.removeAttribute('disabled');
+                downloadBtn.classList.remove('btnDisable');
+                downloadBtn.classList.add('btnEnable');
+                document.getElementById('countdown-time').remove();
+            }
+        })();
+    </script>
+</body>
+
+</html>

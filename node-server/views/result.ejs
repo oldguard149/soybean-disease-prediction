@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home page</title>
+    <link rel='stylesheet' href='/stylesheets/result.css' />
+    <link rel="stylesheet" href="/stylesheets/topnav.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <%- include('topnav') %>
+        <div id="main" >
+            <h2>Base on your information, the desease is predicted as <%= desease %></h2>
+            <div id="info">
+                <h3>Here are some resoures for this desease:</h3>
+                <% if (data) { %>
+                    <ul>
+                        <% for (let i = 0; i < data.length; i++) { %>
+                            <li>
+                                <a href="<%= data[i].url%>"><%= data[i].name %></a>
+                            </li>
+                        <% } %>
+                    </ul>
+                <% } %>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

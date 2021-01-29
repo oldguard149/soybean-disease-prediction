@@ -1,0 +1,19 @@
+.topnav {
+    grid-area: topnav;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 1rem;
+  }
+  
+  .topnav a {
+    padding: 1.30rem;
+    font-size: 1rem;
+    transition-duration: 300ms;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    cursor: pointer;
+  }

@@ -1,0 +1,121 @@
+:root {
+  font-size: 18px;
+  --font-color: #464141;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+#wrap {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-areas: "topnav" "main" "footer";
+  grid-template-rows:  min-content auto 40px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.10);
+  height: max-content;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.header {
+  grid-area: header;
+  height: max-content;
+  background-color: rgb(189, 185, 185);
+}
+
+#form {
+  grid-area: main;
+  width: 70%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.25rem;
+  background-color: rgb(242, 239, 239);
+  height: max-content;
+}
+
+#form h2, #form p {
+  text-align: center;
+  margin: 1rem;
+}
+
+#form #form-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#form-container select {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+}
+
+#form-container select:focus {
+  /* border: 1px solid blue; */
+  box-shadow: 5px 10px 10px rgba(13, 12, 12, 0.22);
+  outline: none;
+}
+
+#form-container input[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+#form-container input[type='submit']:hover {
+  background-color: #2a9df4;
+  color: white;
+  border: 1px solid rgb(109, 145, 243);
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(13, 12, 12, 0.22);
+  transition-duration: 200ms;
+}
+
+#form-container .submit-button {
+  width: 70%;
+  margin: 1rem auto 2rem;
+}
+
+
+#form-container div {
+  padding-top: 20px;
+}
+
+.question {
+  display: grid;
+  grid-template-areas: "left right";
+  grid-gap: 10px 20px;
+}
+
+#last-row {
+  width: 50%;
+  margin: 0 auto;
+  grid-column: span 2;
+}
+
+#info {
+  padding: 2rem;
+}
+
+#info li {
+  padding: 0.25rem;
+}
+
+#info ul {
+  padding-left: 1rem;
+}

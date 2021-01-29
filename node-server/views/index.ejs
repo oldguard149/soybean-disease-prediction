@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/topnav.css">
+
+    <style>
+        .btnDisable,
+        #form-container .btnDisable:hover {
+            cursor: not-allowed !important;
+            background-color: #D6D6D6 !important;
+            border: 1px solid #DAD3D3 !important;
+            color: #bfbfbf !important
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <%- include('topnav') %>
+        <div id="form">
+            <h2>Soybean desease diagnosis</h2>
+            <p>You can also upload your csv file <a href="/upload-csv">here</a></p>
+            <div id="form-container">
+                <form action="" method="POST" onsubmit="disableButton()">
+                    <div class="question">
+                        <div>
+                            <label for="date">Date:</label>
+                            <select name="date" id="date">
+                                <option value="0">April</option>
+                                <option value="1">May</option>
+                                <option value="2">June</option>
+                                <option value="3">July</option>
+                                <option value="4">August</option>
+                                <option value="5">September</option>
+                                <option value="6">October</option>
+                                <option value="7">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="plant-stand">Plant Stand:</label>
+                            <select name="plant-stand" id="plant-stand">
+                                <option value="0">Normal</option>
+                                <option value="1">Less than normal</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="precip">Precip:</label>
+                            <select name="precip" id="precip">
+                                <option value="0">Lt-norm</option>
+                                <option value="1">Norm</option>
+                                <option value="3">Gt-norm</option>
+                                <option value="4">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="temp">Temp:</label>
+                            <select name="temp" id="temp">
+                                <option value="0">Lt-norm</option>
+                                <option value="1">Norm</option>
+                                <option value="3">Gt-norm</option>
+                                <option value="4">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="hail">Hail:</label>
+                            <select name="hail" id="hail">
+                                <option value="0">Yes</option>
+                                <option value="2">No</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="crop-hist">Crop-hist:</label>
+                            <select name="crop-hist" id="crop-hist">
+                                <option value="0">Difference than last year</option>
+                                <option value="1">Same as last year</option>
+                                <option value="3">Same as last two year</option>
+                                <option value="4">Same as last several year</option>
+                                <option value="5">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="area-damaged">Area damaged</label>
+                            <select name="area-damaged" id="area-damaged">
+                                <option value="0">Scattered</option>
+                                <option value="1">Low-areas</option>
+                                <option value="2">Upper-areas</option>
+                                <option value="3">Whole field</option>
+                                <option value="4">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="severity">Severity</label>
+                            <select name="severity" id="severity">
+                                <option value="0">Minor</option>
+                                <option value="1">Pot-severe</option>
+                                <option value="2">servere</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="seed-tmt">Seed tmt</label>
+                            <select name="seed-tmt" id="seed-tmt">
+                                <option value="0">None</option>
+                                <option value="1">Fungicide</option>
+                                <option value="2">Other</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="germination">Germination</label>
+                            <select name="germination" id="germination">
+                                <option value="0">90-100%</option>
+                                <option value="1">80-89%</option>
+                                <option value="2">Less than 80%</option>
+                                <option value="4">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="plant-growth">plant-growth</label>
+                            <select name="plant-growth" id="plant-growth">
+                                <option value="0">Norm</option>
+                                <option value="1">Abnorm</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="leaves">Leaves</label>
+                            <select name="leaves" id="leaves">
+                                <option value="0">Norm</option>
+                                <option value="1">Abnorm</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="leafspots-halo">Leagspots halo</label>
+                            <select name="leafspots-halo" id="leafspots-halo">
+                                <option value="0">Absent</option>
+                                <option value="1">Yellow-halos</option>
+                                <option value="2">No yellow halos</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="leafspots-marg">Leafspots marg</label>
+                            <select name="leafspots-marg" id="leafspots-marg">
+                                <option value="0">w-s-marg</option>
+                                <option value="1">no-w-s-marg</option>
+                                <option value="2">dna</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="leafspot-size">Leafspot size:</label>
+                            <select name="leafspot-size" id="leafspot-size">
+                                <option value="0">Less than 1/8</option>
+                                <option value="1">Greater than 1/8</option>
+                                <option value="2">Dna</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="leaf-shread">Leaf shread</label>
+                            <select name="leaf-shread" id="leaf-shread">
+                                <option value="0">Absent</option>
+                                <option value="1">Present</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="leaf-malf">Leaf malf</label>
+                            <select name="leaf-malf" id="leaf-malf">
+                                <option value="0">Absent</option>
+                                <option value="1">Present</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="leaf-mild">Leaf mild</label>
+                            <select name="leaf-mild" id="leaf-mild">
+                                <option value="0">Absent</option>
+                                <option value="1">Upper-surf</option>
+                                <option value="2">Lower-surf</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="stem">Stem</label>
+                            <select name="stem" id="stem">
+                                <option value="0">Norm</option>
+                                <option value="1">Abnorm</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="lodging">Lodging:</label>
+                            <select name="lodging" id="lodging">
+                                <option value="0">Yes</option>
+                                <option value="2">No</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="stem-cankers">Stem-cankers</label>
+                            <select name="stem-cankers" id="stem-cankers">
+                                <option value="0">Absent</option>
+                                <option value="1">Below soil</option>
+                                <option value="2">Above soil</option>
+                                <option value="3">Above-sec-nde</option>
+                                <option value="4">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="canker-lesion">canker-lesion</label>
+                            <select name="canker-lesion" id="canker-lesion">
+                                <option value="0">Dna</option>
+                                <option value="1">Brown</option>
+                                <option value="2">dk-brown-blk</option>
+                                <option value="3">tan</option>
+                                <option value="4">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="fruiting-bodies">Fruiting bodies</label>
+                            <select name="fruiting-bodies" id="fruiting-bodies">
+                                <option value="0">Absent</option>
+                                <option value="1">Present</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="external-decay">External Decay</label>
+                            <select name="external-decay" id="external-decay">
+                                <option value="0">Absent</option>
+                                <option value="1">Firm and dry</option>
+                                <option value="2">Watery</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="mycelium">Mycelium</label>
+                            <select name="mycelium" id="mycelium">
+                                <option value="0">Absent</option>
+                                <option value="1">Present</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="int-discolor">Int-discolor</label>
+                            <select name="int-discolor" id="int-discolor">
+                                <option value="0">None</option>
+                                <option value="1">Brown</option>
+                                <option value="2">Black</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="sclerotia">Sclerotia</label>
+                            <select name="sclerotina" id="sclerotina">
+                                <option value="0">Absent</option>
+                                <option value="1">Present</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="fruit-pods">Fruit-pods</label>
+                            <select name="fruit-pods" id="fruit-pods">
+                                <option value="0">Norm</option>
+                                <option value="1">Diseased</option>
+                                <option value="2">Few-present</option>
+                                <option value="3">Dna</option>
+                                <option value="4">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="fruit-spots">Fruit spots</label>
+                            <select name="fruit-spots" id="fruit-spots">
+                                <option value="0">Absent</option>
+                                <option value="1">Colored</option>
+                                <option value="2">Brown-w/blk-specks</option>
+                                <option value="3">Distort</option>
+                                <option value="4">dna</option>
+                                <option value="5">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="seed">Seed</label>
+                            <select name="seed" id="seed">
+                                <option value="0">Norm</option>
+                                <option value="1">Abnorm</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="mold-growth">Mold-growth</label>
+                            <select name="mold-growth" id="mold-growth">
+                                <option value="0">Absent</option>
+                                <option value="1">Present</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="seed-discolor">Seed discolor</label>
+                            <select name="seed-discolor" id="seed-discolor">
+                                <option value="0">Absent</option>
+                                <option value="1">Present</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="seed-size">Seed size</label>
+                            <select name="seed-size" id="seed-size">
+                                <option value="0">Normal</option>
+                                <option value="1">Less than normal</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="shriveling">shriveling</label>
+                            <select name="shriveling" id="shriveling">
+                                <option value="0">Absent</option>
+                                <option value="1">Present</option>
+                                <option value="2">Unknown</option>
+                            </select>
+                        </div>
+                        <div id="last-row">
+                            <label for="roots">Roots</label>
+                            <select name="roots" id="roots">
+                                <option value="0">Norm</option>
+                                <option value="1">Rotted</option>
+                                <option value="2">Gall-cysts</option>
+                                <option value="3">Unknown</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="submit-button">
+                        <input id="submit-btn" type="submit" value="Get Predict">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            function disableButton() {
+                var button = document.getElementById('submit-btn');
+                button.classList.add('btnDisable');
+                button.setAttribute("disabled", "disabled");
+            }
+        </script>
+    </div>
+</body>
+
+</html>

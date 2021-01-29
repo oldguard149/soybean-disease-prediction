@@ -1,0 +1,260 @@
+{
+    "2-4-d-injury": [
+        {
+            "name": "2,4-D Damage - Plant Pathology - University of Florida",
+            "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjly9Pmq8PsAhWWyYsBHVAiBeMQFjACegQIBxAC&url=https%3A%2F%2Fplantpath.ifas.ufl.edu%2Fu-scout%2Ftomato%2F24-d-damage.html%23%3A~%3Atext%3D2%252C4%252DD%2520Damage%26text%3DLeaf%2520cupping%252C%2520twisting%2520and%2520shoestring%2Cto%2520that%2520of%2520phenoxy%2520herbicides.&usg=AOvVaw1VUR2QEQe-Sme215NA4BI2"
+        }
+    ],
+    "alternarialeaf-spot": [
+        {
+            "name": "Alternaria Leaf Spot | Field Crops",
+            "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj68cnKscPsAhV3wosBHWcZBeIQFjAGegQIAxAC&url=https%3A%2F%2Ffieldcrops.cals.cornell.edu%2Fsoybeans%2Fdiseases-soybeans%2Falternaria-leaf-spot&usg=AOvVaw35cPc9r8s8cxKeD9ToN_ey"
+        },
+        {
+            "name": "Alternaria leaf spot of soybean | Ag Professional",
+            "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj68cnKscPsAhV3wosBHWcZBeIQFjAHegQIBBAC&url=https%3A%2F%2Fwww.agprofessional.com%2Farticle%2Falternaria-leaf-spot-soybean&usg=AOvVaw1UESnifKYynlHLsEimUuRw"
+        },
+        {
+            "name": "Alternaria Leaf Spot of Soybean",
+            "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj68cnKscPsAhV3wosBHWcZBeIQFjAFegQIBxAC&url=https%3A%2F%2Fcropwatch.unl.edu%2Falternaria-leaf-spot-soybean-unl-cropwatch-sept-12-2012%23%3A~%3Atext%3DAlternaria%2520leaf%2520spot%2520of%2520soybean%252C%2520caused%2520by%2520a%2520fungal%2520species%2Cinsect%2520damage%252C%2520or%2520another%2520disease.%26text%3DThe%2520lesions%2520expand%2520and%2520may%2Ceventually%2520dry%2520out%2520and%2520fall.&usg=AOvVaw0U6aSzw-OrxEnEh379mo6q"
+        }
+    ],
+    "anthracnose": [
+        {
+            "name": "Anthracnose",
+            "url": "https://cropwatch.unl.edu/plantdisease/soybean/anthracnose"
+        },
+        {
+            "name": "Disease Symptoms of Anthracnose",
+            "url": "https://www.pioneer.com/us/agronomy/anthracnose-soybean-cropfocus.html"
+        },
+        {
+            "name": "ANTHRACNOSE STEM BLIGHT OF SOYBEAN",
+            "url": "https://cropprotectionnetwork.org/resources/articles/diseases/anthracnose-stem-blight-of-soybean"
+        }
+    ],
+    "bacterial-blight": [
+        {
+            "name": "Bacterial blight on soybean",
+            "url": "https://extension.umn.edu/pest-management/bacterial-blight-soybean#:~:text=Bacterial%20blight%20is%20a%20widespread,common%20during%20cool%2C%20wet%20weather.&text=Both%20diseases%20can%20occur%20together,lower%20leaves%20in%20the%20plant."
+        },
+        {
+            "name": "Bacterial blight of soybean",
+            "url": "https://en.wikipedia.org/wiki/Bacterial_blight_of_soybean"
+        },
+        {
+            "name": "Bacterial Blight",
+            "url": "https://cropwatch.unl.edu/plantdisease/soybean/bacterial-blight"
+        }
+    ],
+    "bacterial-pustule": [
+        {
+            "name": "BACTERIAL PUSTULE OF SOYBEAN",
+            "url": "https://cropprotectionnetwork.org/resources/articles/diseases/bacterial-pustule-of-soybean"
+        },
+        {
+            "name": "BACTERIAL PUSTULE",
+            "url": "https://soybeanresearchinfo.com/soybean-disease/bacterial-pustule/"
+        },
+        {
+            "name": "Bacterial pustule on soybean",
+            "url": "https://wiki.bugwood.org/NPIPM:Bacterial_pustule_on_soybean"
+        }
+    ],
+    "brown-spot": [
+        {
+            "name": "Septoria Leaf Spot (Brown Spot)",
+            "url": "https://fyi.extension.wisc.edu/fieldcroppathology/soybean_pests_diseases/septoria_brown_spot_soybean/"
+        },
+        {
+            "name": "Septoria brown spot of soybean",
+            "url": "https://cropprotectionnetwork.org/resources/articles/diseases/septoria-brown-spot-of-soybean"
+        },
+        {
+            "name": "Septoria Brown Spot ",
+            "url": "https://soybeanresearchinfo.com/soybean-disease/septoria-brown-spot/"
+        }
+    ],
+    "brown-stem-rot": [
+        {
+            "name": "Brown Stem Rot of Soybean",
+            "url": "https://cropprotectionnetwork.org/resources/articles/diseases/brown-stem-rot-of-soybean"
+        },
+        {
+            "name": "Brown stem rot (BSR) on soybean",
+            "url": "https://extension.umn.edu/pest-management/brown-stem-rot-bsr-soybean"
+        },
+        {
+            "name": "BROWN STEM ROT",
+            "url": "https://soybeanresearchinfo.com/soybean-disease/brown-stem-rot/"
+        }
+    ],
+    "charcoal-rot": [
+        {
+            "name": "8 facts about charcoal rot in soybean",
+            "url": "https://crops.extension.iastate.edu/blog/daren-mueller-jody-korthaus/8-facts-about-charcoal-rot-soybean"
+        },
+        {
+            "name": "CHARCOAL ROT",
+            "url": "https://soybeanresearchinfo.com/soybean-disease/charcoal-rot/"
+        },
+        {
+            "name": "Charcoal rot on soybean",
+            "url": "https://extension.umn.edu/pest-management/charcoal-rot-soybean"
+        }
+    ],
+    "cyst-nematode": [
+        {
+            "name": "Soybean Cyst Nematode",
+            "url": "https://nematode.unl.edu/scn/scnisu.htm"
+        },
+        {
+            "name": "​​Soybean cyst nematode disease​",
+            "url": "https://www.apsnet.org/edcenter/disandpath/nematode/pdlessons/Pages/SoyCystNema.aspx"
+        },
+        {
+            "name": "Soybean Cyst Nematode",
+            "url": "https://cropwatch.unl.edu/plantdisease/soybean/soybean-cyst-nematode"
+        }
+    ],
+    "diaporthe-pod-&-stem-blight": [
+        {
+            "name": "Pod and Stem Blight",
+            "url": "https://cropwatch.unl.edu/plantdisease/soybean/pod-and-stem-blight"
+        },
+        {
+            "name": "Pod and Stem Blight of Soybean",
+            "url": "https://cropprotectionnetwork.org/resources/articles/diseases/pod-and-stem-blight-of-soybean"
+        },
+        {
+            "name": "Pod and stem blight and phomopsis seed decay on soybean",
+            "url": "https://extension.umn.edu/pest-management/pod-and-stem-blight-and-phomopsis-seed-decay-soybean"
+        }
+    ],
+    "diaporthe-stem-canker": [
+        {
+            "name": "Stem canker on soybean",
+            "url": "https://extension.umn.edu/pest-management/stem-canker-soybean"
+        },
+        {
+            "name": "Diaporthe Stem Canker",
+            "url": "https://u.osu.edu/osusoybeandisease/stem-diseases/stem-canker/"
+        },
+        {
+            "name": "Soybean Stem Canker Caused by Diaporthe caulivora",
+            "url": "https://www.frontiersin.org/articles/10.3389/fpls.2019.01733/full"
+        }
+    ],
+    "downy-mildew": [
+        {
+            "name": "Downy Mildew",
+            "url": "https://fyi.extension.wisc.edu/fieldcroppathology/soybean_pests_diseases/soybean_downy_mildew/"
+        },
+        {
+            "name": "Downy mildew on soybean",
+            "url": "https://extension.umn.edu/soybean-pest-management/downy-mildew"
+        },
+        {
+            "name": "DOWNY MILDEW",
+            "url": "https://soybeanresearchinfo.com/soybean-disease/downy-mildew/"
+        }
+    ],
+    "frog-eye-leaf-spot": [
+        {
+            "name": "Frogeye Leaf Spot on Soybeans",
+            "url": "https://www.pioneer.com/us/agronomy/frogeye_leaf_spot_on_soybeans.html"
+        },
+        {
+            "name": "Frogeye Leaf Spot in Soybeans",
+            "url": "https://www.cropscience.bayer.us/learning-center/articles/frogeye-leaf-spot-in-soybeans"
+        },
+        {
+            "name": "Frogeye Leaf Spot",
+            "url": "https://cropwatch.unl.edu/plantdisease/soybean/frogeye-leaf-spot"
+        }
+    ],
+    "herbicide-injury": [
+        {
+            "name": "Identifying Common Herbicide Symptoms in Soybean",
+            "url": "https://crops.extension.iastate.edu/blog/bob-hartzler-meaghan-anderson/identifying-common-herbicide-symptoms-soybean"
+        },
+        {
+            "name": "Herbicide Injury Symptoms on Corn and Soybeans",
+            "url": "https://www.btny.purdue.edu/Extension/Weeds/HerbInj2/InjuryHerb1.html"
+        },
+        {
+            "name": "SOYBEAN HERBICIDE INJURY",
+            "url": "https://www.dekalbasgrowdeltapine.com/en-us/agronomy/soybean-herbicide-injury.html"
+        }
+    ],
+    "phyllosticta-leaf-spot": [
+        {
+            "name": "Phyllosticta Leaf Spot of Soybean",
+            "url": "https://cropprotectionnetwork.org/resources/articles/diseases/phyllosticta-leaf-spot-of-soybean#:~:text=Phyllosticta%20leaf%20spot%20is%20caused,have%20a%20narrow%2C%20dark%20margin."
+        },
+        {
+            "name": "Phyllosticta Leaf Spot",
+            "url": "https://fieldcrops.cals.cornell.edu/soybeans/diseases-soybeans/phyllosticta-leaf-spot/"
+        },
+        {
+            "name": "Kentucky Soybeans: Septoria Brown Spot and Phyllosticta Leaf Spot",
+            "url": "https://agfax.com/2020/07/01/kentucky-soybeans-septoria-brown-spot-and-phyllosticta-leaf-spot/"
+        }
+    ],
+    "phytophthora-rot": [
+        {
+            "name": "Phytophthora root and stem rot on soybean",
+            "url": "https://extension.umn.edu/pest-management/phytophthora-root-and-stem-rot-soybean"
+        },
+        {
+            "name": "Phytophthora Root and Stem Rot of Soybean",
+            "url": "https://cropprotectionnetwork.org/resources/articles/diseases/phytophthora-root-and-stem-rot-of-soybean"
+        },
+        {
+            "name": "Phytophthora root and stem rot of soybean",
+            "url": "https://www.apsnet.org/edcenter/disandpath/oomycete/pdlessons/Pages/PhytophthoraSojae.aspx"
+        }
+    ],
+    "powdery-mildew": [
+        {
+            "name": "Powdery mildew on soybean",
+            "url": "https://extension.umn.edu/pest-management/powdery-mildew-soybean"
+        },
+        {
+            "name": "POWDERY MILDEW",
+            "url": "https://soybeanresearchinfo.com/soybean-disease/powdery-mildew/"
+        },
+        {
+            "name": "Erysiphe diffusa (soybean powdery mildew)",
+            "url": "https://www.cabi.org/isc/datasheet/34047"
+        }
+    ],
+    "purple-seed-stain": [
+        {
+            "name": "Purple Seed Stain of Soybean",
+            "url": "https://cropprotectionnetwork.org/resources/articles/diseases/purple-seed-stain-of-soybean"
+        },
+        {
+            "name": "Cercospora Leaf Blight and Purple Seed Stain of Soybeans",
+            "url": "https://www.pioneer.com/us/agronomy/cercospora_leaf_blight.html"
+        },
+        {
+            "name": "Cercospora leaf blight and purple seed stain on soybean",
+            "url": "https://extension.umn.edu/pest-management/cercospora-leaf-blight-and-purple-seed-stain-soybean"
+        }
+    ],
+    "rhizoctonia-root-rot": [
+        {
+            "name": "Rhizoctonia root and stem rot on soybean",
+            "url": "https://extension.umn.edu/pest-management/rhizoctonia-root-and-stem-rot-soybean"
+        },
+        {
+            "name": "Rhizoctonia Seedling Blight and Root Rot of Soybean",
+            "url": "https://cropprotectionnetwork.org/resources/articles/diseases/rhizoctonia-seedling-blight-and-root-rot-of-soybean"
+        },
+        {
+            "name": "Rhizoctonia Damping-off and Root Rot of Soybeans",
+            "url": "https://ohioline.osu.edu/factsheet/plpath-soy-1"
+        }
+    ]
+}
