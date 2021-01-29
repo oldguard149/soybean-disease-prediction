@@ -5,3 +5,4 @@ A simple website that help prediction some soybean disease. The prediction will 
 # Usage
 1. In ```flask-server``` run ```python wsgi.py```
 2. In ```node-server```, open an other terminal and run ```npm start```
+3. Open browser at ```http://localhost:3000```
